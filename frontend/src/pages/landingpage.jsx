@@ -10,11 +10,30 @@ function LandingPage() {
     <>
       <Navbar />
       <HeroSection />
-      <FeatureCard />
+      <div className="flex flex-wrap md:flex-nowrap gap-6 p-6 justify-center">
+      <FeatureCard 
+        icon="🚀" 
+        title="AI-Driven Paths" 
+        description="Get personalized study routes tailored specifically to your learning pace and career goals."
+        color="bg-blue-600"
+      />
+      <FeatureCard 
+        icon="📚" 
+        title="Quality Content" 
+        description="Rigorous educational pathways built strictly in alignment with SDG 4 quality standards."
+        color="bg-green-600"
+      />
+      <FeatureCard 
+        icon="👥" 
+        title="Peer Networks" 
+        description="Collaborate directly with global student communities working on the same modules."
+        color="bg-purple-600"
+      />
+      </div>
       <TestimonialSection />
       <CTABanner />
       <Footer />
-    </>
+      </>
   );
 }
 
