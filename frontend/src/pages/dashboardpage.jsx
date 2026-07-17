@@ -40,7 +40,7 @@ function DashboardPage() {
     async function loadDashboard() {
       try {
         const [meData, roadmapData] = await Promise.all([
-          apiRequest('auth/me'),
+          apiRequest('/auth/me'),
           apiRequest('/roadmaps'),
         ])
 
