@@ -43,7 +43,7 @@ function HeroSection() {
 
         <div className="flex-1 flex justify-center md:justify-end w-full">
           <img
-            src="frontend\src\L9eEx6QczpA-stXnRxplADCJ8SX993LPdV7DpjJhkwfO8PJqGAgj2L7I7b4i4Jl2QF5oNsESoNIw8Mv6qA1VXhYs1_rQN7JJyQYctDQtvxec0IXQD5k6jraxQz1kkluZgftc4JdDHqZunjdsG2Ah_f0hDg6heI6xV57EYZPsuGzcRpsZ0VMT93ro4o0TtOLt.jpg"
+            src="https://images.openai.com/static-rsc-4/L9eEx6QczpA-stXnRxplADCJ8SX993LPdV7DpjJhkwfO8PJqGAgj2L7I7b4i4Jl2QF5oNsESoNIw8Mv6qA1VXhYs1_rQN7JJyQYctDQtvxec0IXQD5k6jraxQz1kkluZgftc4JdDHqZunjdsG2Ah_f0hDg6heI6xV57EYZPsuGzcRpsZ0VMT93ro4o0TtOLt?purpose=fullsize"
             alt="Learning Illustration"
             className="w-full max-w-md md:max-w-full h-auto rounded-2xl shadow-sm border border-gray-100 object-cover"
           />
