@@ -49,7 +49,9 @@ const User = mongoose.model('User', userSchema)
 const Session = mongoose.model('Session', sessionSchema)
 const Roadmap = mongoose.model('Roadmap', roadmapSchema)
 
-app.use(cors())
+app.use(cors({
+  origin: process.env.FRONTEND_URL
+}))
 app.use(express.json())
 
 app.get('/api/health', async (_req, res) => {
