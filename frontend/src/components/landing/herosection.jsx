@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -26,12 +26,18 @@ function HeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold shadow-sm hover:bg-blue-700 transition-colors">
+            <Link
+              to="/register"
+              className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold shadow-sm hover:bg-blue-700 transition-colors"
+            >
               Start Learning
-            </button>
-            <button className="border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition-colors">
+            </Link>
+            <Link
+              to="/about"
+              className="border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition-colors"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
 

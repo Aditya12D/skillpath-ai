@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
     const navLinkStyle = ({ isActive }) => {
@@ -9,7 +9,9 @@ function Navbar() {
     return (
         <nav className="flex justify-between items-center px-8 py-4">
 
-            <h1>SkillPath</h1>
+            <Link to="/" className="text-xl font-black text-slate-950">
+                SkillPath
+            </Link>
 
             <ul className="flex gap-6">
 
@@ -39,7 +41,12 @@ function Navbar() {
 
             </ul>
 
-            <button>Join Now</button>
+            <Link
+                to="/register"
+                className="rounded-md bg-blue-700 px-4 py-2 text-sm font-bold text-white hover:bg-blue-800"
+            >
+                Join Now
+            </Link>
 
         </nav>
     );

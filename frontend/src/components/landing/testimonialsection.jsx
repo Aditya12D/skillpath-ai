@@ -1,5 +1,3 @@
-import React from "react";
-
 function TestimonialSection() {
   const testimonials = [
     { name: "Rahul S.", role: "Computer Science Student", quote: "The AI doubt assistant answered my coding queries at midnight instantly!" },

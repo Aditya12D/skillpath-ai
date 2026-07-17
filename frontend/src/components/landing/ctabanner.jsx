@@ -12,7 +12,7 @@ function CTABanner() {
             </p>
             
             <Link 
-                to="/contact" 
+                to="/register" 
                 className="inline-block bg-white text-blue-600 font-bold px-8 py-3.5 rounded-xl shadow hover:bg-blue-50 transition-colors duration-200"
             >
                 Get Started Now
