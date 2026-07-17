@@ -31,9 +31,20 @@ Run the backend:
 npm run dev:backend
 ```
 
-Copy `backend/.env.example` to `backend/.env`, then set `GROQ_API_KEY` to a
-real Groq key. Keep `MONGO_URI=mongodb://127.0.0.1:27017/skillpathai` for a
-local MongoDB database, or replace it with your own MongoDB connection string.
+Copy `backend/.env.example` to `backend/.env`, then set:
+
+```bash
+MONGO_URI=mongodb://127.0.0.1:27017/skillpathai
+FRONTEND_URL=http://localhost:5173
+JWT_SECRET=replace_with_a_long_random_secret
+JWT_EXPIRES_IN=7d
+GROQ_API_KEY=your_real_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+```
+
+Keep the local `MONGO_URI` for your computer's MongoDB database, or replace it
+with your hosted MongoDB connection string before deployment. `JWT_SECRET`
+signs login tokens, and passwords are stored as bcrypt hashes.
 
 Make sure MongoDB is running before starting the backend.
 
