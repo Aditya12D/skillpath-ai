@@ -1,7 +1,8 @@
 import jwt from 'jsonwebtoken'
 import User from '../models/User.js'
 
-const JWT_SECRET = process.env.JWT_SECRET || 'dev_only_change_this_secret'
+const JWT_SECRET = process.env.JWT_SECRET
+if (!JWT_SECRET) throw new Error("JWT Secret variable is required")
 
 async function authenticate(req, res, next) {
   const authHeader = req.headers.authorization || ''

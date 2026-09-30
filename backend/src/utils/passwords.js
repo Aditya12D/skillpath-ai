@@ -7,15 +7,9 @@ export function hashPassword(password) {
 }
 
 export async function isValidPassword(user, password) {
-  if (user.password.startsWith('$2')) {
-    return bcrypt.compare(password, user.password)
-  }
-
-  if (user.password !== password) {
+  if (!user.password || !user.password.startsWith('$2')) {
     return false
   }
 
-  user.password = await hashPassword(password)
-  await user.save()
-  return true
+  return bcrypt.compare(password, user.password)
 }
